@@ -15,11 +15,11 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/ComingSoon.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build());
+        setContentView(R.layout.activity_main);
 
        mCalc = new Calc(MainActivity.this);
     }
